@@ -156,7 +156,7 @@ CUSTOM_KERNEL_MAIN_LENS=fm50af
 CUSTOM_KERNEL_RTC=rtc
 
 # For audio kernel driver's speaker customization folder definition.
-CUSTOM_KERNEL_SOUND=amp_yad
+CUSTOM_KERNEL_SOUND=amp_6323pmic_spk
 CUSTOM_KERNEL_SSW=ssw_single
 
 # lens driver config for video telephony camera (2nd solution)
@@ -252,7 +252,7 @@ HAVE_VORBISENC_FEATURE=yes
 
 # It decide whether the system has XLOG mechanism. XLOG is a log filter mechanism which can filter the logs by tag before they are written to log buffer
 HAVE_XLOG_FEATURE=yes
-HW_HAVE_TP_THREAD=no
+HW_HAVE_TP_THREAD=yes
 IS_VCORE_USE_6333VCORE=no
 IS_VM_USE_6333VM=no
 IS_VRF18_USE_6333VRF18=no
@@ -702,7 +702,7 @@ MTK_FACTORY_MODE_IN_GB2312=yes
 MTK_FAN5402_SUPPORT=no
 
 # use external charger IC, MTK support
-MTK_FAN5405_SUPPORT=no
+MTK_FAN5405_SUPPORT=yes
 MTK_FASTBOOT_SUPPORT=no
 
 # For NAND phone such as in EMMC phone with internal sd card, FAT on NAND feature was cut from NAND to be a independent fat partition,and create FAT image file over /fat yaffs2 file system, then let NAND phone can support FAT file system in internal.
@@ -1577,7 +1577,7 @@ CUSTOM_KERNEL_HDMI=
 MTK_HDMI_SUPPORT=no
 
 # to choose which boot logo folder would be used, the boot logo folder path is mediatek/custom/common/uboot/logo/
-BOOT_LOGO = cmcc_hd720
+BOOT_LOGO=cu_hd720
 
 # To choose kernel LCM driver name
 CUSTOM_KERNEL_LCM = otm1282a_hd720_dsi_cmd nt35590_hd720_cmd_tm50

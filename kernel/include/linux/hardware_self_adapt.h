@@ -21,12 +21,8 @@
 
 typedef enum
 {
-/* 
-   this define cannot be use in logic,it only keep head file the same,
-   this file is only for MT6592
-*/
     //G610-T10
-    HW_G610T10_VER   = 0x300,
+    HW_G610T10_VER   = 0x100,
     HW_G610T10_VER_A = HW_G610T10_VER,
     HW_G610T10_VER_B ,
     HW_G610T10_VER_C ,
@@ -43,8 +39,12 @@ typedef enum
     HW_G610T11_VER_E = HW_G610T10_VER_E,
     HW_G610T11_VER_F = HW_G610T10_VER_F,
 
+/*
+       this define cannot be use in logic,it only keep head file the same,
+       this file is only for MT6582
+*/
     //G750-T00
-    HW_G750_VER   = 0x100,
+    HW_G750_VER   = 0x200,
     HW_G750_VER_A = HW_G750_VER,
     HW_G750_VER_B ,
     HW_G750_VER_C ,
@@ -53,18 +53,13 @@ typedef enum
     HW_G750_VER_F ,         //as G750-T20 Ver.B
 
     //G750-U00
-    HW_G750U_VER   = 0x200,
+    HW_G750U_VER   = 0x300,
     HW_G750U_VER_A = HW_G750U_VER,
     HW_G750U_VER_B ,
     HW_G750U_VER_C ,
     HW_G750U_VER_D ,
     HW_G750U_VER_E ,
     HW_G750U_VER_F ,
-
-/* 
-   this define cannot be use in logic,it only keep head file the same,
-   this file is only for MT6592
-*/
 
     //G730-T00
     HW_G730_VER   = 0x400,
@@ -142,8 +137,6 @@ typedef enum
     HW_ULC02_VER_P ,
     HW_ULC02_VER_R ,
     HW_ULC02_VER_S ,
-
-
     HW_VER_NONE    = 0xFFFF,
 }hw_product_type;
 
